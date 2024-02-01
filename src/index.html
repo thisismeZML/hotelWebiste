@@ -4,22 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>RealHome | Website</title>
   </head>
   <body>
     <header class="p-[20px] fixed top-0 left-0 right-0 w-full z-50 bg-white">
       <div class="flex justify-between items-center flex-col gap-5 xl:gap-32 md:flex-row">
+        <!-- first -->
         <div class="flex-1 xl:flex-initial">
           <a href=""><img src="./images/logo.png" class="" alt="" /></a>
         </div>
         <nav class="flex justify-between gap-5 xl:flex-1">
+          <!-- second -->
           <div>
-            <ul class="hidden lg:flex gap-3 items-center">
+            <ul class="-translate-x-full lg:translate-x-0 w-[300px] lg:w-auto lg:flex lg:static lg:flex-row fixed flex-col top-0 bottom-0 bg-white left-0 p-5 gap-3 lg:items-center duration-500" id="sideNav">
               <li class="active duration-500 py-2 px-3 xl:px-6 cursor-pointer"><a href="">Home</a></li>
               <div class="dropdown group relative">
                 <li class="link duration-500 py-2 px-3 xl:px-6 cursor-pointer"><a href="">Real Estate</a>
                 </li>
                 <!-- dropdown -->
-                  <div class="absolute flex translate-y-[20px] opacity-0 items-center w-[200px] flex-col gap-5 bg-white shadow py-4 top-10 left-0 right-0 group-hover:opacity-100 group-hover:translate-y-0 pointer-events-none duration-500 group-hover:pointer-events-auto">
+                  <div class="absolute flex translate-y-[20px] opacity-0 items-center w-[200px] flex-col gap-5 bg-white shadow py-4 top-10 left-0 right-0 group-hover:opacity-100 group-hover:translate-y-0 pointer-events-none duration-500 group-hover:pointer-events-auto z-50">
                     <a href="" class="dropdown-link p-[10px]">dropdown link</a>
                     <a href="" class="dropdown-link p-[10px]">dropdown link</a>
                     <a href="" class="dropdown-link p-[10px]">dropdown link</a>
@@ -37,8 +42,10 @@
               </div>
               <li class="link duration-500 py-2 px-3 xl:px-6 cursor-pointer"><a href="">Blog</a></li>
               <li class="link duration-500 py-2 px-3 xl:px-6 cursor-pointer"><a href="">Contact</a></li>
+              <li class=" cursor-pointer lg:hidden absolute bottom-0 top-6 right-9" id="cross"><img src="./images/cross-svgrepo-com.svg" alt=""></i></li>
             </ul>
           </div>
+          <!-- Third -->
           <div class="flex gap-4 items-center">
             <div class="gap-8 hidden xl:flex">
               <a href=""><img src="./images/facebook.svg" alt="" /></a>
@@ -54,7 +61,7 @@
               <div>
                 <a href=""><img src="./images/user.svg" alt="" /></a>
               </div>
-              <div class="lg:hidden">
+              <div class="lg:hidden cursor-pointer" id="menu">
                 <img src="./images/menu-svgrepo-com.svg" alt="">
               </div>
             </div>
